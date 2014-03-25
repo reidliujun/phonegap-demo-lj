@@ -1,0 +1,18 @@
+2014-03-25 10:01:28.679 PhoneGapTest[13580:70b] Multi-tasking -> Device: YES, App: YES
+2014-03-25 10:01:28.687 PhoneGapTest[13580:70b] Unlimited access to network resources
+2014-03-25 10:01:29.260 PhoneGapTest[13580:70b] Resetting plugins due to page load.
+2014-03-25 10:01:30.867 PhoneGapTest[13580:70b] Finished load of: file:///Users/liujun/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/CA823482-B149-467C-B084-ECB2EAFC0CA8/PhoneGapTest.app/www/index.html
+2014-03-25 10:01:42.007 PhoneGapTest[13580:70b] CDVWebViewDelegate: Navigation started when state=1
+2014-03-25 10:01:42.007 PhoneGapTest[13580:70b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-03-25 10:01:42.062 PhoneGapTest[13580:70b] Failed to load webpage with error: The URL can’t be shown
+2014-03-25 10:01:46.034 PhoneGapTest[13580:70b] Failed to load webpage with error: The URL can’t be shown
+2014-03-25 10:02:01.642 PhoneGapTest[13580:70b] Camera.getPicture: source type 1 not available.
+2014-03-25 10:02:03.670 PhoneGapTest[13580:70b] THREAD WARNING: ['Camera'] took '2027.986084' ms. Plugin should use a background thread.
+2014-03-25 10:09:29.562 PhoneGapTest[13580:70b] CDVWebViewDelegate: Navigation started when state=1
+2014-03-25 10:09:29.572 PhoneGapTest[13580:70b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-03-25 10:09:29.572 PhoneGapTest[13580:70b] Failed to load webpage with error: The URL can’t be shown
+2014-03-25 10:56:36.492 PhoneGapTest[17417:70b] Multi-tasking -> Device: YES, App: YES
+2014-03-25 10:56:36.499 PhoneGapTest[17417:70b] Unlimited access to network resources
+2014-03-25 10:56:36.648 PhoneGapTest[17417:70b] Resetting plugins due to page load.
+2014-03-25 11:00:23.525 PhoneGapTest[17417:4003] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2014-03-25 11:00:23.581 PhoneGapTest[17417:70b] Finished load of: file:///Users/liujun/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/CA823482-B149-467C-B084-ECB2EAFC0CA8/PhoneGapTest.app/www/index.html

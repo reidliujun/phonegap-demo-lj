@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/Toast.js"></script>
+        <script type="text/javascript" src="js/Calendar.js"></script>
+        <script type="text/javascript" charset="utf-8">
+
+    // Wait for Cordova to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // Add contact
+    function addContact() {
+        // var myContact = navigator.contacts.create({"displayName": "Test User"});
+        // myContact.note = "This contact has a note.";
+        // console.log("The contact, " + myContact.displayName + ", note: " + myContact.note);
+        if (!navigator.contacts) {
+            app.showAlert("Contacts API not supported", "Error");
+            return;
+        }
+        var contact = navigator.contacts.create();
+        contact.name = {givenName: "blabla", familyName: "blabla",};
+        contact.note = "This contact has a note.";
+        var phoneNumbers = [];
+        phoneNumbers[0] = new ContactField('work', "1234567", false);
+        phoneNumbers[1] = new ContactField('mobile', "1234567", true); // preferred number
+        contact.phoneNumbers = phoneNumbers;
+        contact.save();
+        alert("Contact Added!");
+        return false;
+    }
+
+    // Alert dialog dismissed
+    function alertDismissed() {
+        // do something
+    }
+
+    // Show a custom alertDismissed
+    //
+    function showAlert() {
+        if (navigator.notification) {
+            // navigator.notification.alert('alert testing', null, 'Info', 'OK');
+            // document.write("<p>notification works</p>");
+            navigator.notification.alert(
+            'You are the winner!',  // message
+            'Game Over',            // title
+            'Done'                  // buttonName
+            );
+        } else {
+            alert("for alert testing");
+            // document.write("<p>notification does not work</p>");
+        }
+        // alert("for alert testing");
+    }
+
+    function onDeviceReady() {
+        alert("device ready!");
+        pictureSource=navigator.camera.PictureSourceType;
+        destinationType=navigator.camera.DestinationType;
+    }
+
+    function vibrate() {
+        navigator.notification.vibrate(2000);
+    }
+
+
+        // Cordova is ready
+    //
+    function getLocation() {
+        navigator.geolocation.getCurrentPosition(onSuccessGeo, onErrorGeo, {timeout: 5000});
+        // return false;
+    }
+
+    // onSuccess Geolocation
+    //
+    function onSuccessGeo(position) {
+        // var element = document.getElementById('geolocation');
+        // element.innerHTML = 'Latitude: '           + position.coords.latitude              + '<br />' +
+        //                     'Longitude: '          + position.coords.longitude             + '<br />' +
+        //                     'Altitude: '           + position.coords.altitude              + '<br />' +
+        //                     'Accuracy: '           + position.coords.accuracy              + '<br />' +
+        //                     'Altitude Accuracy: '  + position.coords.altitudeAccuracy      + '<br />' +
+        //                     'Heading: '            + position.coords.heading               + '<br />' +
+        //                     'Speed: '              + position.coords.speed                 + '<br />' +
+        //                     'Timestamp: '          +                                   position.timestamp          + '<br />';
+        alert('Latitude: ' + position.coords.latitude);
+    }
+
+    // onError Callback receives a PositionError object
+    //
+    function onErrorGeo(error) {
+        alert('code: '    + error.code    + '\n' +
+                'message: ' + error.message + '\n');
+    }
+
+
+    function checkConnection() {
+        var networkState = navigator.connection.type;
+
+        var states = {};
+        states[Connection.UNKNOWN]  = 'Unknown connection';
+        states[Connection.ETHERNET] = 'Ethernet connection';
+        states[Connection.WIFI]     = 'WiFi connection';
+        states[Connection.CELL_2G]  = 'Cell 2G connection';
+        states[Connection.CELL_3G]  = 'Cell 3G connection';
+        states[Connection.CELL_4G]  = 'Cell 4G connection';
+        states[Connection.CELL]     = 'Cell generic connection';
+        states[Connection.NONE]     = 'No network connection';
+
+        alert('Connection type: ' + states[networkState]);
+    }
+
+    // window.addEventListener("batterystatus", onBatteryStatus, false);
+
+    // function onBatteryStatus(info) {
+    //     // Handle the online event
+    //     console.log("Level: " + info.level + " isPlugged: " + info.isPlugged);
+    // }
+
+
+    function onSuccessAcce(acceleration) {
+        alert('Acceleration X: ' + acceleration.x + '\n' +
+              'Acceleration Y: ' + acceleration.y + '\n' +
+              'Acceleration Z: ' + acceleration.z + '\n' +
+              'Timestamp: '      + acceleration.timestamp + '\n');
+    }
+
+    function onErrorAcce() {
+        alert('onError!');
+    }
+
+    function getAccelerInfo(){
+        navigator.accelerometer.getCurrentAcceleration(onSuccessAcce, onErrorAcce);
+    }
+    
+      
+
+      // create calendar
+      function createCalendar(){
+        var startDate = new Date("March 26, 2014 13:00:00");
+        var endDate = new Date("March 26, 2014 14:30:00");
+        var title = "My nice event";
+        var location = "Home";
+        var notes = "Some notes about this event.";
+        var success = function(message) { alert("Success: " + JSON.stringify(message)); };
+        var error = function(message) { alert("Error: " + message); };
+        window.plugins.calendar.createEvent(title,location,notes,startDate,endDate,success,error);
+      }
+      
+
+      //repeating local notification
+      // function addNotification(){
+      //     var now                  = new Date().getTime(),
+      //     var _60_seconds_from_now = new Date(now + 60*1000);
+
+      //     window.plugins.notification.local.add({
+      //       id:      1,
+      //       title:   'Reminder',
+      //       message: 'Dont forget to buy some flowers.',
+      //       repeat:  'weekly',
+      //       date:    _60_seconds_from_now
+      //     });
+      // }
+
+
+      // // find (iOS only for now)
+      // window.plugins.calendar.findEvent(title,location,notes,startDate,endDate,success,error);
+
+      // // change the title of the event (iOS only for now)
+      // var newTitle = "New title!";
+      // window.plugins.calendar.modifyEvent(title,location,notes,startDate,endDate,newTitle,location,notes,startDate,endDate,success,error);
+
+      // // delete (iOS only for now)
+      // // note that it deletes all matching events, which are duplicates anyway
+      // window.plugins.calendar.deleteEvent(newTitle,location,notes,startDate,endDate,success,error);
+
+    function getCompass(){
+        navigator.compass.getCurrentHeading(onSuccessCom, onErrorCom);
+    }
+    
+
+    // onSuccess: Get the current heading
+    //
+    function onSuccessCom(heading) {
+        alert('Heading: ' + heading.magneticHeading);
+    }
+
+    // onError: Failed to get the heading
+    //
+    function onErrorCom(compassError) {
+        alert('Compass Error: ' + compassError.code);
+    }
+
+
+
+
+    var pictureSource;   // picture source
+    var destinationType; // sets the format of returned value 
+    // Called when a photo is successfully retrieved
+    //
+    function onPhotoDataSuccess(imageData) {
+      // Uncomment to view the base64 encoded image data
+      // console.log(imageData);
+
+      // Get image handle
+      //
+      var smallImage = document.getElementById('smallImage');
+
+      // Unhide image elements
+      //
+      smallImage.style.display = 'block';
+
+      // Show the captured photo
+      // The inline CSS rules are used to resize the image
+      //
+      smallImage.src = "data:image/jpeg;base64," + imageData;
+    }
+
+    // Called when a photo is successfully retrieved
+    //
+    function onPhotoURISuccess(imageURI) {
+      // Uncomment to view the image file URI 
+      // console.log(imageURI);
+
+      // Get image handle
+      //
+      var largeImage = document.getElementById('largeImage');
+
+      // Unhide image elements
+      //
+      largeImage.style.display = 'block';
+
+      // Show the captured photo
+      // The inline CSS rules are used to resize the image
+      //
+      largeImage.src = imageURI;
+    }
+
+    // A button will call this function
+    //
+    function capturePhoto() {
+      // Take picture using device camera and retrieve image as base64-encoded string
+      navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
+        destinationType: destinationType.DATA_URL });
+    }
+
+    // A button will call this function
+    //
+    function capturePhotoEdit() {
+      // Take picture using device camera, allow edit, and retrieve image as base64-encoded string  
+      navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 20, allowEdit: true,
+        destinationType: destinationType.DATA_URL });
+    }
+
+    // A button will call this function
+    //
+    function getPhoto(source) {
+      // Retrieve image file location from specified source
+      navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 50, 
+        destinationType: destinationType.FILE_URI,
+        sourceType: source });
+    }
+
+    // Called if something bad happens.
+    // 
+    function onFail(message) {
+      alert('Failed because: ' + message);
+    }
+
+    </script>
+
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
+
+    </head>
+    <body>
+        <h1>Example</h1>
+        <p>Create Contact</p>
+        <p><a href="#" onclick="addContact(); "><h2>Create contacts</h2></a></p>
+        <br>
+        <p><a href="#" onclick="vibrate()"><h2>Show Vibrate</h2></a></p>
+        <br>
+        <p><a href="#" onclick="showAlert()"><h2>Show Alert</h2></a></p>
+        <br>
+        <p><a href="#" onclick="getLocation()"><h2>Show Location</h2></a></p>
+        <!-- <p id="geolocation">Watching geolocation...</p> -->
+        <br>
+        <p> <a href="#" onclick="checkConnection()"> <h2>Show network state</h2></a></p>
+        <br>
+        <p> <a href="#" onclick="getAccelerInfo()"> <h2>Show Acce info</h2></a></p>
+        <!-- <button type="button" onclick="showAlert()">Click Me!</button> -->
+        <!-- test for toast plugin, it works quite well -->
+        <button onclick="window.plugins.toast.showShortTop('Hello there!', function(a){console.log('toast success: ' + a)}, function(b){alert('toast error: ' + b)})">Toast showShortTop</button>
+        <button onclick="window.plugins.toast.showLongBottom('Hello there!', function(a){console.log('toast success: ' + a)}, function(b){alert('toast error: ' + b)})">Toast showLongBottom</button>
+        <button onclick="window.plugins.toast.show('Hello there!', 'long', 'center', function(a){console.log('toast success: ' + a)}, function(b){alert('toast error: ' + b)})">Toast show long center</button>
+        <p> <a href="#" onclick="createCalendar()"> <h2>Create Calendar</h2></a></p>
+        <br>
+        <p> <a href="#" onclick="getCompass()"> <h2>Get Compass</h2></a></p>
+        <br>
+        <button onclick="capturePhoto();">Capture Photo</button> <br>
+        <button onclick="capturePhotoEdit();">Capture Editable Photo</button> <br>
+        <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
+        <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
+        <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+        <img style="display:none;" id="largeImage" src="" />
+        <br>
+        
+        <!-- <p> <a href="#" onclick="addNotification()"> <h2>Create notification</h2></a></p> -->
+
+    </body>
+
+
+</html>

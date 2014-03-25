@@ -1,0 +1,25 @@
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes.dex : \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/com/example/phonegaptest/BuildConfig.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/com/example/phonegaptest/PhoneGapTest.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/com/example/phonegaptest/R$attr.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/com/example/phonegaptest/R$drawable.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/com/example/phonegaptest/R$string.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/com/example/phonegaptest/R$xml.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/com/example/phonegaptest/R.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/org/apache/cordova/camera/CameraLauncher.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/org/apache/cordova/camera/ExifHelper.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/org/apache/cordova/camera/FileHelper.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/org/apache/cordova/contacts/ContactAccessor$WhereOptions.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/org/apache/cordova/contacts/ContactAccessor.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/org/apache/cordova/contacts/ContactAccessorSdk5.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/org/apache/cordova/contacts/ContactManager$1.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/org/apache/cordova/contacts/ContactManager$2.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/org/apache/cordova/contacts/ContactManager$3.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/org/apache/cordova/contacts/ContactManager.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/org/apache/cordova/geolocation/CordovaLocationListener$LocationTimeoutTask.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/org/apache/cordova/geolocation/CordovaLocationListener.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/org/apache/cordova/geolocation/GeoBroker.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/org/apache/cordova/geolocation/GPSListener.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/org/apache/cordova/geolocation/NetworkListener.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/classes/org/apache/cordova/vibration/Vibration.class \
+/Users/liujun/Desktop/phonegaptest/platforms/android/bin/dexedLibs/classes-04ca2957da32e354151757804f7997eb.jar \

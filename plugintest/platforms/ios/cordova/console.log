@@ -1,0 +1,459 @@
+2014-03-25 09:58:05.460 plugintest[12153:70b] Multi-tasking -> Device: YES, App: YES
+2014-03-25 09:58:05.761 plugintest[12153:70b] Unlimited access to network resources
+2014-03-25 09:58:09.554 plugintest[12153:70b] Resetting plugins due to page load.
+2014-03-25 09:58:11.881 plugintest[12153:70b] Finished load of: file:///Users/liujun/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/0A715E39-A324-466A-8516-13D0A6EC26FC/plugintest.app/www/index.html
+2014-03-25 09:58:12.153 plugintest[12153:70b] ERROR: Plugin 'Contacts' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-03-25 09:58:12.161 plugintest[12153:70b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Contacts1922021257",
+  "Contacts",
+  "save",
+  [
+    {
+      "id" : null,
+      "rawId" : null,
+      "displayName" : null,
+      "ims" : null,
+      "note" : "This contact has a note.",
+      "urls" : null,
+      "birthday" : null,
+      "photos" : null,
+      "categories" : null,
+      "addresses" : null,
+      "name" : {
+        "givenName" : "blabla",
+        "familyName" : "blabla"
+      },
+      "nickname" : null,
+      "phoneNumbers" : [
+        {
+          "type" : "work",
+          "id" : null,
+          "value" : "1234567",
+          "pref" : false
+        },
+        {
+          "type" : "mobile",
+          "id" : null,
+          "value" : "1234567",
+          "pref" : true
+        }
+      ],
+      "emails" : null,
+      "organizations" : null
+    }
+  ]
+]
+2014-03-25 09:58:14.297 plugintest[12153:70b] ERROR: Plugin 'Geolocation' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-03-25 09:58:14.297 plugintest[12153:70b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Geolocation1922021258",
+  "Geolocation",
+  "getLocation",
+  [
+    false,
+    0
+  ]
+]
+2014-03-25 09:58:23.553 plugintest[12153:70b] ERROR: Plugin 'Vibration' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-03-25 09:58:23.553 plugintest[12153:70b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "Vibration",
+  "vibrate",
+  [
+    2000
+  ]
+]
+2014-03-25 09:58:26.341 plugintest[12153:70b] ERROR: Plugin 'Contacts' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-03-25 09:58:26.342 plugintest[12153:70b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Contacts1922021259",
+  "Contacts",
+  "save",
+  [
+    {
+      "id" : null,
+      "rawId" : null,
+      "displayName" : null,
+      "ims" : null,
+      "note" : "This contact has a note.",
+      "urls" : null,
+      "birthday" : null,
+      "photos" : null,
+      "categories" : null,
+      "addresses" : null,
+      "name" : {
+        "givenName" : "blabla",
+        "familyName" : "blabla"
+      },
+      "nickname" : null,
+      "phoneNumbers" : [
+        {
+          "type" : "work",
+          "id" : null,
+          "value" : "1234567",
+          "pref" : false
+        },
+        {
+          "type" : "mobile",
+          "id" : null,
+          "value" : "1234567",
+          "pref" : true
+        }
+      ],
+      "emails" : null,
+      "organizations" : null
+    }
+  ]
+]
+2014-03-25 09:58:48.220 plugintest[12153:70b] ERROR: Plugin 'Contacts' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-03-25 09:58:48.221 plugintest[12153:70b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Contacts1922021260",
+  "Contacts",
+  "save",
+  [
+    {
+      "id" : null,
+      "rawId" : null,
+      "displayName" : null,
+      "ims" : null,
+      "note" : "This contact has a note.",
+      "urls" : null,
+      "birthday" : null,
+      "photos" : null,
+      "categories" : null,
+      "addresses" : null,
+      "name" : {
+        "givenName" : "blabla",
+        "familyName" : "blabla"
+      },
+      "nickname" : null,
+      "phoneNumbers" : [
+        {
+          "type" : "work",
+          "id" : null,
+          "value" : "1234567",
+          "pref" : false
+        },
+        {
+          "type" : "mobile",
+          "id" : null,
+          "value" : "1234567",
+          "pref" : true
+        }
+      ],
+      "emails" : null,
+      "organizations" : null
+    }
+  ]
+]
+2014-03-25 09:58:49.414 plugintest[12153:70b] ERROR: Plugin 'Contacts' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-03-25 09:58:49.414 plugintest[12153:70b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Contacts1922021261",
+  "Contacts",
+  "save",
+  [
+    {
+      "id" : null,
+      "rawId" : null,
+      "displayName" : null,
+      "ims" : null,
+      "note" : "This contact has a note.",
+      "urls" : null,
+      "birthday" : null,
+      "photos" : null,
+      "categories" : null,
+      "addresses" : null,
+      "name" : {
+        "givenName" : "blabla",
+        "familyName" : "blabla"
+      },
+      "nickname" : null,
+      "phoneNumbers" : [
+        {
+          "type" : "work",
+          "id" : null,
+          "value" : "1234567",
+          "pref" : false
+        },
+        {
+          "type" : "mobile",
+          "id" : null,
+          "value" : "1234567",
+          "pref" : true
+        }
+      ],
+      "emails" : null,
+      "organizations" : null
+    }
+  ]
+]
+2014-03-25 09:58:51.271 plugintest[12153:70b] ERROR: Plugin 'Geolocation' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-03-25 09:58:51.271 plugintest[12153:70b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Geolocation1922021262",
+  "Geolocation",
+  "getLocation",
+  [
+    false,
+    0
+  ]
+]
+2014-03-25 09:58:52.387 plugintest[12153:70b] ERROR: Plugin 'Geolocation' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-03-25 09:58:52.388 plugintest[12153:70b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Geolocation1922021263",
+  "Geolocation",
+  "getLocation",
+  [
+    false,
+    0
+  ]
+]
+2014-03-25 10:00:01.592 plugintest[12153:4003] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2014-03-25 10:00:21.176 plugintest[12790:70b] Multi-tasking -> Device: YES, App: YES
+2014-03-25 10:00:21.184 plugintest[12790:70b] Unlimited access to network resources
+2014-03-25 10:00:21.539 plugintest[12790:70b] Resetting plugins due to page load.
+2014-03-25 10:00:21.603 plugintest[12790:70b] Finished load of: file:///Users/liujun/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/0A715E39-A324-466A-8516-13D0A6EC26FC/plugintest.app/www/index.html
+2014-03-25 10:00:21.653 plugintest[12790:70b] ERROR: Plugin 'Contacts' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-03-25 10:00:21.654 plugintest[12790:70b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Contacts976795212",
+  "Contacts",
+  "save",
+  [
+    {
+      "id" : null,
+      "rawId" : null,
+      "displayName" : null,
+      "ims" : null,
+      "note" : "This contact has a note.",
+      "urls" : null,
+      "birthday" : null,
+      "photos" : null,
+      "categories" : null,
+      "addresses" : null,
+      "name" : {
+        "givenName" : "blabla",
+        "familyName" : "blabla"
+      },
+      "nickname" : null,
+      "phoneNumbers" : [
+        {
+          "type" : "work",
+          "id" : null,
+          "value" : "1234567",
+          "pref" : false
+        },
+        {
+          "type" : "mobile",
+          "id" : null,
+          "value" : "1234567",
+          "pref" : true
+        }
+      ],
+      "emails" : null,
+      "organizations" : null
+    }
+  ]
+]
+2014-03-25 10:00:26.683 plugintest[12790:70b] ERROR: Plugin 'Geolocation' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-03-25 10:00:26.684 plugintest[12790:70b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Geolocation976795213",
+  "Geolocation",
+  "getLocation",
+  [
+    false,
+    0
+  ]
+]
+2014-03-25 10:00:28.412 plugintest[12790:70b] ERROR: Plugin 'Vibration' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-03-25 10:00:28.413 plugintest[12790:70b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "INVALID",
+  "Vibration",
+  "vibrate",
+  [
+    2000
+  ]
+]
+2014-03-25 10:00:29.596 plugintest[12790:70b] ERROR: Plugin 'Contacts' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-03-25 10:00:29.597 plugintest[12790:70b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Contacts976795214",
+  "Contacts",
+  "save",
+  [
+    {
+      "id" : null,
+      "rawId" : null,
+      "displayName" : null,
+      "ims" : null,
+      "note" : "This contact has a note.",
+      "urls" : null,
+      "birthday" : null,
+      "photos" : null,
+      "categories" : null,
+      "addresses" : null,
+      "name" : {
+        "givenName" : "blabla",
+        "familyName" : "blabla"
+      },
+      "nickname" : null,
+      "phoneNumbers" : [
+        {
+          "type" : "work",
+          "id" : null,
+          "value" : "1234567",
+          "pref" : false
+        },
+        {
+          "type" : "mobile",
+          "id" : null,
+          "value" : "1234567",
+          "pref" : true
+        }
+      ],
+      "emails" : null,
+      "organizations" : null
+    }
+  ]
+]
+2014-03-25 10:09:56.669 plugintest[14357:70b] Multi-tasking -> Device: YES, App: YES
+2014-03-25 10:09:56.701 plugintest[14357:70b] Unlimited access to network resources
+2014-03-25 10:09:57.333 plugintest[14357:70b] Resetting plugins due to page load.
+2014-03-25 10:09:57.570 plugintest[14357:70b] Finished load of: file:///Users/liujun/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/0A715E39-A324-466A-8516-13D0A6EC26FC/plugintest.app/www/index.html
+2014-03-25 10:09:59.756 plugintest[14357:70b] ERROR: Plugin 'Geolocation' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-03-25 10:09:59.757 plugintest[14357:70b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Geolocation1525486188",
+  "Geolocation",
+  "getLocation",
+  [
+    false,
+    0
+  ]
+]
+2014-03-25 10:10:00.518 plugintest[14357:70b] ERROR: Plugin 'Geolocation' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-03-25 10:10:00.519 plugintest[14357:70b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Geolocation1525486189",
+  "Geolocation",
+  "getLocation",
+  [
+    false,
+    0
+  ]
+]
+2014-03-25 10:10:16.510 plugintest[14357:70b] ERROR: Plugin 'Contacts' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-03-25 10:10:16.511 plugintest[14357:70b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Contacts1525486190",
+  "Contacts",
+  "save",
+  [
+    {
+      "id" : null,
+      "rawId" : null,
+      "displayName" : null,
+      "ims" : null,
+      "note" : "This contact has a note.",
+      "urls" : null,
+      "birthday" : null,
+      "photos" : null,
+      "categories" : null,
+      "addresses" : null,
+      "name" : {
+        "givenName" : "blabla",
+        "familyName" : "blabla"
+      },
+      "nickname" : null,
+      "phoneNumbers" : [
+        {
+          "type" : "work",
+          "id" : null,
+          "value" : "1234567",
+          "pref" : false
+        },
+        {
+          "type" : "mobile",
+          "id" : null,
+          "value" : "1234567",
+          "pref" : true
+        }
+      ],
+      "emails" : null,
+      "organizations" : null
+    }
+  ]
+]
+2014-03-25 10:10:18.864 plugintest[14357:70b] ERROR: Plugin 'Contacts' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-03-25 10:10:18.865 plugintest[14357:70b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Contacts1525486191",
+  "Contacts",
+  "save",
+  [
+    {
+      "id" : null,
+      "rawId" : null,
+      "displayName" : null,
+      "ims" : null,
+      "note" : "This contact has a note.",
+      "urls" : null,
+      "birthday" : null,
+      "photos" : null,
+      "categories" : null,
+      "addresses" : null,
+      "name" : {
+        "givenName" : "blabla",
+        "familyName" : "blabla"
+      },
+      "nickname" : null,
+      "phoneNumbers" : [
+        {
+          "type" : "work",
+          "id" : null,
+          "value" : "1234567",
+          "pref" : false
+        },
+        {
+          "type" : "mobile",
+          "id" : null,
+          "value" : "1234567",
+          "pref" : true
+        }
+      ],
+      "emails" : null,
+      "organizations" : null
+    }
+  ]
+]
+2014-03-25 10:18:18.042 plugintest[14357:70b] ERROR: Plugin 'Geolocation' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-03-25 10:18:18.043 plugintest[14357:70b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Geolocation1525486192",
+  "Geolocation",
+  "getLocation",
+  [
+    false,
+    0
+  ]
+]
+2014-03-25 10:18:18.722 plugintest[14357:70b] ERROR: Plugin 'Geolocation' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-03-25 10:18:18.722 plugintest[14357:70b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Geolocation1525486193",
+  "Geolocation",
+  "getLocation",
+  [
+    false,
+    0
+  ]
+]
+2014-03-25 10:52:59.724 plugintest[14357:70b] ERROR: Plugin 'Geolocation' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-03-25 10:52:59.738 plugintest[14357:70b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Geolocation1525486194",
+  "Geolocation",
+  "getLocation",
+  [
+    false,
+    0
+  ]
+]
+2014-03-25 10:53:00.451 plugintest[14357:70b] ERROR: Plugin 'Geolocation' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-03-25 10:53:00.452 plugintest[14357:70b] -[CDVCommandQueue executePending] [Line 127] FAILED pluginJSON = [
+  "Geolocation1525486195",
+  "Geolocation",
+  "getLocation",
+  [
+    false,
+    0
+  ]
+]

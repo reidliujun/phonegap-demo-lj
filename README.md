@@ -18,7 +18,9 @@ The plugin used is as follows:
 * dialogs(local alert)
 
     *command for add: phonegap plugin add org.apache.cordova.dialogs* 
+
     **if you want to use the local notification, then dialogs plugin is essential in this case.**
+
 * geolocation(not working now)
 
     *command for add: phonegap plugin add org.apache.cordova.geolocation* 
@@ -34,6 +36,7 @@ The plugin used is as follows:
 * calendar
 
     *command for add: phonegap plugin add https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git* 
+
     **a 'calendar.js' is needed in the index.html header**
     
 * compass(not working now)
@@ -45,11 +48,11 @@ The plugin used is as follows:
     *command for add: phonegap plugin add org.apache.cordova.camera* 
     
 ~~~
-reference: http://docs.phonegap.com/en/3.4.0/cordova_plugins_pluginapis.md.html#Plugin%20APIs
+reference: [http://docs.phonegap.com/en/3.4.0/cordova_plugins_pluginapis.md.html#Plugin%20APIs](http://docs.phonegap.com/en/3.4.0/cordova_plugins_pluginapis.md.html#Plugin%20APIs)
 ~~~
 
 ~~~
-example reference: http://docs.phonegap.com/en/3.4.0/cordova_plugins_pluginapis.md.html#Plugin%20APIs
+example reference: [http://docs.phonegap.com/en/3.4.0/cordova_plugins_pluginapis.md.html#Plugin%20APIs](http://docs.phonegap.com/en/3.4.0/cordova_plugins_pluginapis.md.html#Plugin%20APIs)
 ~~~
 
 phonegaptest
@@ -57,5 +60,5 @@ phonegaptest
 * this is a demo step by step how to do a phonegap applicaiton. check the tutorial below.
 
 ~~~
-reference: http://coenraets.org/blog/phonegap-tutorial/
+reference: [http://coenraets.org/blog/phonegap-tutorial/](http://coenraets.org/blog/phonegap-tutorial/)
 ~~~
